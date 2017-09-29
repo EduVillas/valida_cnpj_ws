@@ -15,7 +15,7 @@
 
     function pesquisacep(valor) {
 
-    	//Nova variavel "cep" somente com dígitos.
+    	//Nova variavel "cep" somente com dÃ­gitos.
     	var cnpj = valor;
 
     	//Cria um elemento javascript.
@@ -24,7 +24,7 @@
     	//Sincroniza com o callback.
     	script.src = '//receitaws.com.br/v1/cnpj/'+ cnpj + '/?callback=meu_callback';
 
-    	//Insere script no documento e carrega o conteúdo.
+    	//Insere script no documento e carrega o conteÃºdo.
        document.body.appendChild(script);
 
     };
@@ -35,7 +35,7 @@
     <body>
     <!-- Inicio do formulario -->
       <form method="get" action=".">
-        <label>Cep:
+        <label>CNPJ:
         <input name="txtCNPJ" type="text" id="txtCNPJ" value="" 
                onblur="pesquisacep(this.value);" /></label><br />
         <label>Nome:
