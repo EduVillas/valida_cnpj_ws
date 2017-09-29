@@ -13,9 +13,9 @@
     	document.getElementById('txtRazao').value=(conteudo.nome);
     }
 
-    function pesquisacep(valor) {
+    function pesquisacnpj(valor) {
 
-    	//Nova variavel "cep" somente com dígitos.
+    	//Nova variavel "cnpj" somente com dígitos.
     	var cnpj = valor;
 
     	//Cria um elemento javascript.
@@ -37,7 +37,7 @@
       <form method="get" action=".">
         <label>CNPJ:
         <input name="txtCNPJ" type="text" id="txtCNPJ" value="" 
-               onblur="pesquisacep(this.value);" /></label><br />
+               onblur="pesquisacnpj(this.value);" /></label><br />
         <label>Nome:
         <input name="txtRazao" type="text" id="txtRazao" size="60" /></label><br />
       </form>
